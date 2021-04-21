@@ -98,10 +98,21 @@ small {
 @media (min-width: 376px) and (max-width: 1440px) {
     body {
         background-image: url(images/bg-intro-desktop.png);
-        
+        background-size: cover;
+        margin-left: 8rem;
+        margin-right: 8rem;
+        margin-top: 4rem;
     }
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
+    .left {
+        text-align: left;
+        padding-top: 7rem;
+    }
+    h1 {
+        font-size: 3rem;
     }
 }
