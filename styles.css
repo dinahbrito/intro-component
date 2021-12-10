@@ -21,7 +21,9 @@ body {
 }
 h1 {
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    letter-spacing: -.29px;
 }
 
 main {
@@ -33,7 +35,14 @@ main {
 }
 
 .left {
-    margin-top: 4.5rem;
+    margin-top: 5.5rem;
+}
+
+.left p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+    margin-top: 1rem;
 }
 
 .right {
