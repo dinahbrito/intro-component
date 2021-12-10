@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Reset */
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    margin: 0;
-    height: auto;
     color: #fff;
     background-color: hsl(0, 100%, 74%);
     background-image: url(images/bg-intro-mobile.png);
     background-size: cover;
-    height: 100%;
     font-weight: 400;
 }
 h1 {
@@ -20,8 +28,8 @@ main {
     display: grid;
     justify-content: center;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
 .left {
@@ -33,20 +41,21 @@ main {
 }
 
 .offer {
-    padding: 2px;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
     box-shadow: 0px 7px 1px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    height: 88px;
+    letter-spacing: .27px;
+    line-height: 26px;
+    padding: 18px 67px;
+    width: 327px;
 }
 
-.offer p {
-    font-size: 1rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
 
-.try {
-    font-weight: 600;
+
+span {
+    font-weight: 700;
 }
 
 form {
@@ -95,7 +104,7 @@ small {
     font-weight: 500;
 }
 
-@media (min-width: 376px) and (max-width: 1440px) {
+@media (min-width: 376px) {
     body {
         background-image: url(images/bg-intro-desktop.png);
         background-size: cover;
@@ -107,6 +116,10 @@ small {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
+    }
+    .offer {
+        width: 100%;
+        max-height: 60px;
     }
     .left {
         text-align: left;
