@@ -11,6 +11,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
+/* set background color and image */
 body {
     font-family: "Poppins", sans-serif;
     color: #fff;
@@ -19,6 +20,7 @@ body {
     background-size: cover;
     font-weight: 400;
 }
+
 h1 {
     font-weight: 700;
     font-size: 1.75rem;
@@ -26,6 +28,7 @@ h1 {
     letter-spacing: -.29px;
 }
 
+/* center content vertically and horizontally in page */
 main {
     display: grid;
     justify-content: center;
@@ -34,6 +37,7 @@ main {
     margin-right: 1.5rem;
 }
 
+/* form side of page */
 .left {
     margin-top: 5.5rem;
 }
@@ -62,12 +66,11 @@ main {
     width: 100%;
 }
 
-
-
 span {
     font-weight: 700;
 }
 
+/* Form styling */
 form {
     margin-top: 1.5rem;
     background-color: #fff;
@@ -89,6 +92,11 @@ input {
     margin-bottom: 1rem;
     padding-left: 1.2rem;
     width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #5E54A4;
 }
 
 button {
@@ -113,6 +121,7 @@ button:hover {
     background-color: #77E2B3;
 }
 
+/* Terms and conditions styling */
 small {
     color: #BAB7D4;
     font-size: .687rem;
@@ -126,6 +135,7 @@ small {
     color: #FF7979;
     font-weight: 700;
 }
+
 
 @media (min-width: 1000px) {
     body {
