@@ -45,20 +45,20 @@ main {
     margin-top: 1rem;
 }
 
-.right {
-    /* margin-top: 4rem; */
-}
+
 
 .offer {
+    align-items: center;
     background-color: hsl(248, 32%, 49%);
     border-radius: 10px;
     box-shadow: 0px 7px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
     font-size: 15px;
     height: 88px;
+    justify-content: center;
     letter-spacing: .27px;
     line-height: 26px;
-    padding: 18px 67px;
-    width: 327px;
+    width: 100%;
 }
 
 
@@ -70,21 +70,24 @@ span {
 form {
     margin-top: 1.5rem;
     background-color: #fff;
-    padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 4rem;
+    padding: 1.5rem;
     box-shadow:  0px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
 input {
-    width: 90%;
-    height: 1.5rem;
-    padding: 15px;
+    border: 1px solid #DEDEDE;
     border-radius: 5px;
-    border: 1px solid hsl(246, 25%, 77%);
-    margin-bottom: 1rem;
-    font-size: 14px;
+    color: #3D3B48;
+    font-size: .875rem;
     font-weight: 600;
+    height: 3.5rem;
+    line-height: 1.625rem;
+    letter-spacing: .25px;
+    margin-bottom: 1rem;
+    padding-left: 1.2rem;
+    width: 100%;
 }
 
 button {
@@ -113,22 +116,22 @@ small {
     font-weight: 500;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 1000px) {
     body {
+        align-items: center;
         background-image: url(images/bg-intro-desktop.png);
         background-size: cover;
+        display: grid;
+        height: 100vh;
+        justify-content: center;
         margin-left: 8rem;
         margin-right: 8rem;
-        height: 100vh;
-        display: grid;
-        justify-content: center;
-        align-items: center;
     }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-       
+       grid-gap: 2.81rem;
     }
 
     .offer {
@@ -141,6 +144,7 @@ small {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 32.8rem;
         text-align: left;
         /* padding-top: 7rem; */
     }
