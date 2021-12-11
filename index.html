@@ -23,10 +23,30 @@
                 <p><span class="try">Try it free 7 days</span> then $20/mo. thereafter</p>
             </div>
             <form>
-                <input type="text" id="firstname" name="firstname" placeholder="First Name">
-                <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-                <input type="email" id="email" name="email" placeholder="Email Address">
-                <input type="password" id="password" name="password" placeholder="Password">
+                <div class="form-control">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-circle">
+                    <small class="error-message">First Name cannot be empty</small>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-circle">
+                    <small class="error-message">Last Name cannot be empty</small>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-circle">
+                    <small class="error-message">Looks like this is not an email</small>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-circle">
+                    <small class="error-message">Password cannot be empty</small>
+                </div>
+
                 <button>Claim Your Free Trial</button>
                 <small>By clicking the button, you are agreeing to our <a href="#" class="legal">Terms and
                         Services</a></small>
