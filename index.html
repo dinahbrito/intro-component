@@ -24,32 +24,34 @@
             <div class="offer">
                 <p><span class="try">Try it free 7 days</span> then $20/mo. thereafter</p>
             </div>
+
             <form class="form" id="form">
+
                 <div class="form-control">
                     <input type="text" id="firstname" name="firstname" placeholder="First Name">
-                    <img src="./images/icon-error.svg" alt="error alert" class="error-icon error">
-                    <small class="error-message error">First Name cannot be empty</small>
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-icon" id="error-icon">
+                    <small class="error" id="error">First Name cannot be empty</small>
                 </div>
 
                 <div class="form-control">
                     <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-                    <img src="./images/icon-error.svg" alt="error alert" class="error-icon error">
-                    <small class="error-message error">Last Name cannot be empty</small>
+                    <img src="./images/icon-error.svg" alt="error alert" class="error-icon" id="error-icon">
+                    <small class="error" id="error">Last Name cannot be empty</small>
                 </div>
 
                 <div class="form-control">
                     <input type="email" id="email" name="email" placeholder="Email Address">
                     <img src="./images/icon-error.svg" alt="error alert" class="error-icon error">
-                    <small class="error-message error">Looks like this is not an email</small>
+                    <small class="error">Looks like this is not an email</small>
                 </div>
 
                 <div class="form-control">
                     <input type="password" id="password" name="password" placeholder="Password">
                     <img src="./images/icon-error.svg" alt="error alert" class="error-icon error">
-                    <small class="error-message error">Password cannot be empty</small>
+                    <small class="error">Password cannot be empty</small>
                 </div>
 
-                <button input type="submit">Claim Your Free Trial</button>
+                <button input type="submit" id="submit">Claim Your Free Trial</button>
                 <small class="terms">By clicking the button, you are agreeing to our <a href="#" class="legal">Terms and
                         Services</a></small>
             </form>

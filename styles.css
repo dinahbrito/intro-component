@@ -84,9 +84,9 @@ form {
     position: relative;
 }
 
-.error-message {
+.error{
     color: #FF7979;
-    display: block;
+    display: none;
     font-size: 11px;
     font-style: italic;
     text-align: right;
@@ -96,11 +96,9 @@ form {
     right: 27px;
     top: 17px;
     position: absolute;
-}
-
-.error {
     display: none;
 }
+
 
 input {
     border: 1px solid #DEDEDE;
