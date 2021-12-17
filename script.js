@@ -52,16 +52,6 @@ function addError(input, message)
     formControl.className = 'form-control error';
 }
 
-function addSuccess(input, message)
-{
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-
-    small.style.color = green;
-    small.innerText = message;
-    formControl.className = 'form-control';
-}
-
 function validEmail(email)
 {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
