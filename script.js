@@ -38,7 +38,7 @@ function checkValue()
     } else if (!validEmail(emailValue)) {
         addError(email, 'Looks ike this is not an email');
     } else {
-        removeError(email);
+        removeError(email, '');
     }
 
     if (passwordValue === "") {
@@ -60,9 +60,12 @@ function addError(input, message)
     formControl.className = 'form-control error';
 }
 
-function removeError(input)
+function removeError(input, message)
 {
     const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.innerText = message;
     formControl.classList.remove('error');
 }
 
