@@ -196,8 +196,14 @@ button:hover {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-top: .5rem;
         max-width: 32.8rem;
         text-align: left;
+    }
+
+    .left p {
+        margin-top: 0;
+        padding-top: 0;
     }
 
     h1 {
@@ -208,11 +214,13 @@ button:hover {
     }
 
     .right {
+        margin-top: -1rem;
         max-width: 474px;
         max-height: 540px;
     }
     
     form {
         margin-bottom: 0;
+        padding: 2.5rem;
     }
 }
