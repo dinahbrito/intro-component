@@ -21,27 +21,26 @@ function checkValue()
 
 
     if (firstNameValue === "") {
-        addError(firstName, 'First name cannot be blank');
+        addError(firstName, 'First name cannot be empty');
     }
 
     if (lastNameValue === "") {
-        addError(lastName, 'Last name cannot be blank');
+        addError(lastName, 'Last name cannot be empty');
     }
 
     if (emailValue === "") {
-        //add error class
         addError(email, 'Email cannot be blank');
 
     } else if (!validEmail(emailValue)) {
-        //add different error class
-        addError(email, 'Please enter a valid email');
+        addError(email, 'Looks ike this is not an email');
     }
 
     if (passwordValue === "") {
-        //add error class
-        addError(password, 'Password cannot be blank');
-    }
+        addError(password, 'Password cannot be empty');
 
+    } else if (passwordValue.length < 8) {
+        addError(password, 'Password must be at least 8 characters long');
+    }
 }
 
 function addError(input, message)
@@ -53,9 +52,19 @@ function addError(input, message)
     formControl.className = 'form-control error';
 }
 
+function addSuccess(input, message)
+{
+    const formControl = input.parentElement;
+    const small = formControl.querySelector('small');
+
+    small.style.color = green;
+    small.innerText = message;
+    formControl.className = 'form-control';
+}
 
 function validEmail(email)
 {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
+
 
