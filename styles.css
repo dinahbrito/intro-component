@@ -104,6 +104,9 @@ form {
     top: 17px;
 }
 
+.form-control.error img {
+    display: block;
+}
 
 input {
     border: 1px solid #DEDEDE;
