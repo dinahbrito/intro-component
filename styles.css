@@ -150,10 +150,12 @@ button:hover {
 
 /* Terms and conditions styling */
 .terms {
+    display: block;
     color: #BAB7D4;
     font-size: .687rem;
     font-weight: 500;
     line-height: 1.3rem;
+    justify-content: center;
     text-align: center;
 }
 
