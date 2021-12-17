@@ -22,10 +22,14 @@ function checkValue()
 
     if (firstNameValue === "") {
         addError(firstName, 'First name cannot be empty');
+    } else {
+        removeError(firstName);
     }
 
     if (lastNameValue === "") {
         addError(lastName, 'Last name cannot be empty');
+    } else {
+        removeError(lastName);
     }
 
     if (emailValue === "") {
@@ -33,6 +37,8 @@ function checkValue()
 
     } else if (!validEmail(emailValue)) {
         addError(email, 'Looks ike this is not an email');
+    } else {
+        removeError(email);
     }
 
     if (passwordValue === "") {
@@ -40,6 +46,8 @@ function checkValue()
 
     } else if (passwordValue.length < 8) {
         addError(password, 'Password must be at least 8 characters long');
+    } else {
+        removeError(password);
     }
 }
 
@@ -50,6 +58,12 @@ function addError(input, message)
 
     small.innerText = message;
     formControl.className = 'form-control error';
+}
+
+function removeError(input)
+{
+    const formControl = input.parentElement;
+    formControl.classList.remove('error');
 }
 
 function validEmail(email)
