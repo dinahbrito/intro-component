@@ -108,6 +108,14 @@ form {
     display: block;
 }
 
+.form-control small {
+    display: none;
+}
+
+.form-control.error small {
+    display: block;
+}
+
 input {
     border: 1px solid #DEDEDE;
     border-radius: 5px;
